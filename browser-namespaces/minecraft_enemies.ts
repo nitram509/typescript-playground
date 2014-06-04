@@ -14,6 +14,8 @@ module minecraft {
             name:string;
             power:number = 100;
         }
+
+
     }
 
 }
