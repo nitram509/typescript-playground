@@ -1,5 +1,8 @@
+// declares an internal module
 var minecraft;
 (function (minecraft) {
+    // declares a module inside an internal module
+    // with modifier "export" which is equivalent to public
     (function (enemies) {
         var skeleton = (function () {
             function skeleton() {
