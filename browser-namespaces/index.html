@@ -2,10 +2,52 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title></title>
+  <title>Minecraft Mob Tournament</title>
+  <link rel="stylesheet" href="css/minecraft_mob_tournament.css"/>
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css"/>
+  <script type="application/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="application/javascript" src="js/jquery.velocity.min.js"></script>
+  <script type="application/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
 </head>
 <body>
-<script src="minecraft_enemies.js"></script>
-<script src="minecraft_player.js"></script>
+
+<div style="height: 12px; font-size: 10px; text-align: right;font-family: 'Courier New', Courier, Monospaced;">
+  <a href="/hal/browser.html" style="text-decoration: none;">HAL Browser &gt;</a>
+</div>
+
+<h1>
+  <img src="pics/minecraft-logo.png" alt="minecraft logo" style="height: 70px">
+  <br>
+  <span style="text-decoration: underline">Mob Tournament</span>
+</h1>
+
+<ul class="attendees">
+  <li class="nav left"><button id="btnAttendeeLeft">&lt;</button></li>
+  <li class="attendee"></li>
+  <li class="attendee"></li>
+  <li class="attendee"></li>
+  <li class="attendee"></li>
+  <li class="attendee"></li>
+  <li class="nav right"><button id="btnAttendeeRight">&gt;</button></li>
+</ul>
+
+<ul class="opponents">
+  <li class="opponent"> </li>
+  <li class="opponent"> </li>
+  <li class="opponent"> </li>
+  <li class="opponent"> </li>
+  <li class="nav fight"><button id="btnOpponentsFight">Fight!</button></li>
+</ul>
+
+<script type="application/javascript" src="minecraft_hypermedia.js"></script>
+<script type="application/javascript" src="minecraft_model.js"></script>
+<script type="application/javascript" src="minecraft_viewcontroller.js"></script>
+<script type="application/javascript" src="minecraft_tournament.js"></script>
+
+<script type="application/javascript">
+  var app = new minecraft.tournament.App();
+  app.start();
+</script>
+
 </body>
 </html>

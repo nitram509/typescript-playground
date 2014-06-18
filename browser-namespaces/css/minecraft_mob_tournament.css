@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+
+h1 {
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  font-weight: bold;
+  -moz-text-shadow: 2px 2px 3px rgba(97, 8, 21, 0.34);
+  -webkit-text-shadow: 2px 2px 3px rgba(97, 8, 21, 0.34);
+  text-shadow: 2px 2px 3px rgba(97, 8, 21, 0.34);
+  margin: 10px;
+  letter-spacing: 10px;
+  text-transform: capitalize;
+  font-size: 37px;
+}
+
+ul.attendees {
+  list-style: none;
+  border-spacing: 6px 0px;
+  border-collapse: separate;
+}
+
+ul.attendees > li {
+  display: table-cell;
+  height: 200px;
+
+  -moz-box-shadow: 1px 1px 2px 2px rgba(33, 77, 97, 0.34);
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(33, 77, 97, 0.34);
+  box-shadow: 1px 1px 2px 2px rgba(33, 77, 97, 0.34);
+}
+
+ul.attendees > li.nav {
+  width: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+ul.attendees > li.nav > button {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  height: 275px;
+  width: 100%;
+  cursor: pointer;
+}
+
+ul.attendees > li.attendee {
+  width: 200px;
+  border-radius: 3px;
+}
+
+ul.attendees > li.attendee > .description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+
+  height: 70px;
+
+  background: cornsilk;
+
+  border-bottom: 1px solid #e1dabe;
+  padding: 2px 5px 0;
+  overflow: hidden;
+}
+
+ul.attendees > li.attendee > .description span {
+  float: right;
+  font-style: normal;
+}
+
+ul.attendees > li.attendee > div.image {
+  height: 200px;
+  width: 200px;
+  vertical-align: bottom;
+  display: table-cell;
+}
+
+ul.attendees > li.attendee img {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  position: relative;
+}
+
+/* *** OPPONENTS *** */
+
+ul.opponents {
+  padding-left: 160px;
+  list-style: none;
+  border-spacing: 6px;
+  border-collapse: separate;
+}
+
+ul.opponents > li.ui-state-droppable {
+  background: rgba(97, 8, 21, 0.15);
+  box-shadow: 1px 1px 2px 2px #000;
+}
+
+ul.opponents > li.ui-state-droppable > img {
+  -moz-transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+ul.opponents > li.ui-state-droppable > img {
+  opacity: 0;
+}
+
+ul.opponents > li.nav {
+  display: table-cell;
+  width: 100px;
+  height: 200px;
+  vertical-align: middle;
+}
+
+ul.opponents > li.nav > button {
+  width: 100%;
+  height: 100%;
+  padding: 40% 20%;
+  margin-left: 10px;
+}
+
+ul.opponents > li.opponent {
+  display: table-cell;
+  height: 200px;
+  vertical-align: bottom;
+  width: 200px;
+  border-radius: 3px;
+
+  -moz-box-shadow: 1px 1px 2px 2px rgba(97, 8, 21, 0.34);
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(97, 8, 21, 0.34);
+  box-shadow: 1px 1px 2px 2px rgba(97, 8, 21, 0.34);
+}
+
+ul.opponents > li.opponent > img {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  position: relative;
+}
