@@ -1,8 +1,8 @@
 
 # Pypescript playground
 
-## Typescript Playground & Showcase
+#### Typescript Playground & Showcase
 
-## for REST, Spring Boot, HAL+JSON Hypermedia Document
+#### for REST, Spring Boot, HAL+JSON Hypermedia Document
 
-## Everything in an example app called "Minecraft Mob Tournament"
+#### Everything in an example app called "Minecraft Mob Tournament"
