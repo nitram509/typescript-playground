@@ -38,23 +38,23 @@ module.exports = function (grunt) {
               {expand: true, src: ['lib/*'], dest: 'build/', filter: 'isFile'},
             ]
           },
-          js_to_min_js: {
+          source_files: {
             files: [
-              {src: 'build/<%= pkg.name %>.js', dest: 'build/<%= pkg.name %>.min.js'}
+              {expand: true, src: ['src/*'], dest: 'build/', filter: 'isFile'},
             ]
           }
         },
 
         watch: {
           src: {
-            files: ['src/main/js/**/*.js', 'src/main/js/**/*.ts', 'lib/**'],
-            tasks: ['no-uglify']
+            files: ['src/**/*.ts', 'lib/**'],
+            tasks: ['default']
           }
         },
 
         clean: {
           build: ['build'],
-          no_uglyfied_js: ['build/<%= pkg.name %>.js']
+          source_maps: "build/**/*.map"
         }
 
       });
@@ -68,7 +68,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-typescript');
 
   // Default task(s).
-  grunt.registerTask('default', ['typescript', 'uglify:minify', 'copy:static_resources', 'clean:no_uglyfied_js']);
-  grunt.registerTask('no-uglify', ['typescript', 'copy:static_resources', 'copy:js_to_min_js']);
+  grunt.registerTask('default', ['typescript', 'copy:static_resources']);
+  grunt.registerTask('minify', ['typescript', 'copy:static_resources', 'uglify:minify', 'clean:source_maps']);
 
 };
