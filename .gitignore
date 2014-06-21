@@ -1,5 +1,6 @@
 .idea
 *.iml
 *.map
-playground-server/target
-
+playground-server-java/target
+server/node_modules
+build
