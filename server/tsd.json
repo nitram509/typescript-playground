@@ -3,6 +3,13 @@
   "repo": "borisyankov/DefinitelyTyped",
   "ref": "master",
   "path": "src/typings",
-  "bundle": "typings/tsd.d.ts",
-  "installed": {}
+  "bundle": "src/typings/tsd.d.ts",
+  "installed": {
+    "express/express.d.ts": {
+      "commit": "c773444c7699a5f29963fed726e833daa3660bfc"
+    },
+    "node/node.d.ts": {
+      "commit": "c773444c7699a5f29963fed726e833daa3660bfc"
+    }
+  }
 }
