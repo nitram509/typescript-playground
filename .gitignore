@@ -3,4 +3,6 @@
 *.map
 playground-server-java/target
 server/node_modules
-build
+server/build
+browser-namespaces/*.js
+browser-namespaces/*.js.map
