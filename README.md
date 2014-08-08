@@ -14,12 +14,19 @@ This example uses Typescript compile feature 'namespaces'.
 
 * Typescript compiler (http://www.typescriptlang.org/)
 
-### Build
+### Build manually
 
 ````
+npm install -g tsc
 cd browser-namespaces
 for FileName in *.ts; do tsc --sourcemap "$FileName" -t ES5 --out "$(basename "$FileName" .ts).js"; done
 ````
+
+### Build via IntelliJ IDEA
+
+There is an official plugin and documentation from Jetbrains, the vendor of IntelliJ IDEA and Web-Storm.
+I highly recommend to have a look at these great tools.
+http://www.jetbrains.com/idea/webhelp/transpiling-typescript-to-javascript.html
 
 ## Playground server
 
