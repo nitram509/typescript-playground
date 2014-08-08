@@ -12,7 +12,7 @@ var app = express();
 var port = Number(process.env.PORT || 8080);
 
 // serving 3rd party code from ZIP file, just because statistics in Github pages ;-)
-app.use('/hal', expressStaticZip(__dirname + '/../static/hal.zip'));
+app.use('/hal', expressStaticZip(__dirname + '/static/hal.zip'));
 
 app.listen(port);
 console.log('Express started on port ' + port);

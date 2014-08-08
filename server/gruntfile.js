@@ -36,6 +36,7 @@ module.exports = function (grunt) {
           static_resources: {
             files: [
               {expand: true, src: ['lib/*'], dest: 'build/', filter: 'isFile'},
+              {expand: true, src: ['static/*'], dest: 'build/'},
             ]
           },
           source_files: {
