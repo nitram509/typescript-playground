@@ -15,6 +15,7 @@
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.4.4",
     "grunt-typescript": "^0.3.8",
+    "halson": "^2.1.1",
     "logfmt": "~1.1.2",
     "typescript": "~1.0.1"
   },
