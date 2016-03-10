@@ -1,8 +1,7 @@
 .idea
 *.iml
 *.map
-playground-server-java/target
-server/node_modules
-server/build
 browser-namespaces/*.js
-browser-namespaces/*.js.map
+playground-server-java/target
+playground-server-nodejs/build
+node_modules

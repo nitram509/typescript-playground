@@ -1,7 +1,7 @@
 /// <reference path="minecraft_hypermedia" />
 /// <reference path="minecraft_model" />
 /// <reference path="minecraft_viewcontroller" />
-/// <reference path="jquery.d" />
+/// <reference path="jquery.d.ts" />
 
 /*
  * splitted namespace,

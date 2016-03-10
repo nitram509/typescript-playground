@@ -1,5 +1,5 @@
 /// <reference path="minecraft_model" />
-/// <reference path="jquery.d" />
+/// <reference path="jquery.d.ts" />
 
 module minecraft {
 

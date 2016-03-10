@@ -1,0 +1,25 @@
+{
+  "_links" : {
+    "http://nitram509.github.com/rel/mobs" : {
+      "href" : "${baseUri}/mobs",
+      "title" : "Mob collection",
+      "templated" : false,
+      "methods" : ["GET"]
+    },
+    "http://nitram509.github.com/rel/mob" : {
+      "href" : "${baseUri}/mobs/{mobId}",
+      "title" : "Mob",
+      "templated" : true,
+      "methods" : ["GET", "PUT", "POST"]
+    },
+    "metrics" : {
+      "href" : "${baseUri}/metrics"
+    },
+    "env" : {
+      "href" : "${baseUri}/env"
+    },
+    "health" : {
+      "href" : "${baseUri}/health"
+    }
+  }
+}

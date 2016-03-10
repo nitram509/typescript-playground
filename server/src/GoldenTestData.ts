@@ -1,5 +1,0 @@
-
-export = GoldenTestData;
-class GoldenTestData {
-
-}
