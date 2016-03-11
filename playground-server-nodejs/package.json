@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
+    "chai": "^3.5.0",
     "express": "^4.2.0",
     "express-static-zip": "^0.2.0",
     "grunt": "~0.4.2",
@@ -16,6 +17,9 @@
     "grunt-contrib-watch": "^0.4.4",
     "grunt-typescript": "^0.8.0",
     "halson": "^2.3.1",
+    "intern": "^3.0.6",
+    "jasmine": "^2.4.1",
+    "jasmine-node": "^1.14.5",
     "logfmt": "~1.1.2",
     "typescript": "1.6.2"
   },
@@ -25,7 +29,8 @@
   },
   "scripts": {
     "postinstall": "node ./node_modules/grunt-cli/bin/grunt",
-    "start": "node build/server.js"
+    "start": "node build/server.js",
+    "test": "node ./node_modules/jasmine-node/bin/jasmine-node --verbose build/tests"
   },
   "repository": {
     "type": "git",

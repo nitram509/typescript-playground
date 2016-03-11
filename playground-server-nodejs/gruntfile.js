@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 
         typescript: {
           base: {
-            src: ['src/**/*.ts'],
+            src: ['src/**/*.ts','tests/**/*.ts'],
             dest: 'build',
             options: {
               module: 'commonjs',
@@ -36,19 +36,19 @@ module.exports = function (grunt) {
           static_resources: {
             files: [
               {expand: true, src: ['lib/*'], dest: 'build/', filter: 'isFile'},
-              {expand: true, src: ['static/*'], dest: 'build/'},
+              {expand: true, src: ['static/*'], dest: 'build/'}
             ]
           },
           source_files: {
             files: [
-              {expand: true, src: ['src/*'], dest: 'build/', filter: 'isFile'},
+              {expand: true, src: ['src/*'], dest: 'build/', filter: 'isFile'}
             ]
           }
         },
 
         watch: {
           src: {
-            files: ['src/**/*.ts', 'lib/**'],
+            files: ['src/**/*.ts','rests/**/*.ts', 'lib/**'],
             tasks: ['default']
           }
         },

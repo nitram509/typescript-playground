@@ -20,6 +20,8 @@ This example uses Typescript compile feature 'namespaces'.
 npm install -g tsc
 cd browser-namespaces
 for FileName in minecraft*.ts; do tsc --sourcemap "$FileName" -t ES5 --out "$(basename "$FileName" .ts).js"; done
+# OR
+tsc -p tsconfig.json
 ````
 
 ### Build via IntelliJ IDEA
