@@ -1,4 +1,3 @@
-/// <reference path="../src/GoldenTestData" />
 /// <reference path="typings/jasmine/jasmine.d.ts" />
 
 import GoldenTestData = require("../src/GoldenTestData");
